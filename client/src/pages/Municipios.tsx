@@ -341,20 +341,20 @@ const Municipios: React.FC = () => {
         <DialogContent className="p-0 sm:max-w-none w-full h-full max-h-screen overflow-hidden border-none shadow-none bg-white">
           <div className="absolute top-0 left-0 w-full h-full bg-white z-0"></div>
           
-          <div className="relative flex flex-col justify-center items-center h-screen bg-transparent z-10 p-6">
+          <div className="relative flex flex-col justify-center items-center h-screen bg-transparent z-10 p-4">
             <div className="w-11/12 max-w-md bg-white rounded-lg shadow-lg p-4 border border-[#E83D2220]">
-              <DialogTitle className="text-2xl font-bold text-[#E83D22] text-center mb-4">
+              <DialogTitle className="text-xl font-bold text-[#E83D22] text-center mb-2">
                 <i className="fas fa-exclamation-circle mr-2"></i>
                 Atenção! Oportunidade de Trabalho
               </DialogTitle>
               
-              <DialogDescription className="text-base text-center text-gray-700 py-3 mb-4 bg-[#FFF8F6] rounded-lg border border-[#E83D2220] p-4">
+              <DialogDescription className="text-sm text-center text-gray-700 py-2 mb-2 bg-[#FFF8F6] rounded-lg border border-[#E83D2220] p-3">
                 Na região que você escolheu, estamos com <span className="font-bold text-[#E83D22]">URGENTE</span> necessidade
                 de novos entregadores, pois a demanda de entregas está alta e temos poucos entregadores cadastrados.
               </DialogDescription>
               
-              <div className="my-4">
-                <h3 className="font-medium text-gray-800 mb-2 text-center text-lg">Quando você pode começar?</h3>
+              <div className="my-2">
+                <h3 className="font-medium text-gray-800 mb-1 text-center text-base">Quando você pode começar?</h3>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3">
                   {getNextThreeDays().map((date, index) => (
